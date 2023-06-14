@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="764.0" prefWidth="1140.0" style="-fx-background-color: #F6C510;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PageUser">
+    <children>
+        <AnchorPane prefHeight="764.0" prefWidth="318.0" style="-fx-background-color: #FBE440;" styleClass="sidePar" stylesheets="@../../css/admin.css">
+            <children>
+                <Label alignment="CENTER" layoutX="77.0" layoutY="79.0" prefHeight="42.0" prefWidth="132.0" text="User name :" textFill="#398bf3">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                    <effect>
+                        <Glow level="0.33" />
+                    </effect>
+                </Label>
+                <Button alignment="BASELINE_LEFT" layoutY="183.0" mnemonicParsing="false" onAction="#All_Free_Appointments" prefHeight="50.0" prefWidth="318.0" style="-fx-background-color: #FBE440;" styleClass="sideParItemActive" stylesheets="@../../css/admin.css" text="Show  Free Appointments ">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                    <padding>
+                        <Insets left="20.0" />
+                    </padding>
+                </Button>
+                <Button alignment="BASELINE_LEFT" layoutX="-4.0" layoutY="246.0" mnemonicParsing="false" onAction="#Book_An_Free_Appointment" prefHeight="50.0" prefWidth="318.0" style="-fx-background-color: #FBE440;" styleClass="sideParItem" text="Book  Free Appointment" textFill="#070505">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                    <padding>
+                        <Insets left="20.0" />
+                    </padding>
+                </Button>
+                <Button alignment="BASELINE_LEFT" layoutX="-6.0" layoutY="380.0" mnemonicParsing="false" onAction="#All_Booked_Finished_Appointments" prefHeight="50.0" prefWidth="318.0" style="-fx-background-color: #FBE440;" styleClass="sideParItem" text=" Booked Finished Appointments">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                    <padding>
+                        <Insets left="20.0" />
+                    </padding>
+                </Button>
+                <Button alignment="BASELINE_LEFT" layoutX="-4.0" layoutY="314.0" mnemonicParsing="false" onAction="#All_Booked_waiting_Appointments" prefHeight="50.0" prefWidth="318.0" style="-fx-background-color: #FBE440;" styleClass="sideParItem" text="Booked waiting Appointments">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                    <padding>
+                        <Insets left="20.0" />
+                    </padding>
+                </Button>
+                <Button alignment="CENTER" layoutX="38.0" layoutY="529.0" mnemonicParsing="false" onAction="#Back" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: #FBE440;" styleClass="sideParItem" text="Log Out">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                    </font>
+                    <padding>
+                        <Insets left="20.0" />
+                    </padding>
+                </Button>
+                <Label fx:id="username" layoutX="133.0" layoutY="51.0" prefHeight="35.0" prefWidth="181.0" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            <Button alignment="BASELINE_LEFT" layoutX="-4.0" layoutY="443.0" mnemonicParsing="false" onAction="#doctor_Comment" prefHeight="50.0" prefWidth="318.0" style="-fx-background-color: #FBE440;" styleClass="sideParItem" text="Doctor Comment">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </Button>
+            </children>
+            <effect>
+                <DropShadow blurType="ONE_PASS_BOX" color="#000000b2" height="28.29" radius="36.225" width="118.61" />
+            </effect>
+        </AnchorPane>
+        <TableView fx:id="tableView" layoutX="359.0" layoutY="198.0" prefHeight="528.0" prefWidth="741.0" style="-fx-background-color: #38B9E0; -fx-background-radius: 30;">
+            <columns>
+                <TableColumn fx:id="Appointment_Data" prefWidth="160.7999267578125" text="Appointment Data" />
+                <TableColumn fx:id="Appointment_Day" prefWidth="193.60003662109375" text="Appointment Day" />
+                <TableColumn fx:id="Appointment_Time" prefWidth="209.5999755859375" text="Appointment Time" />
+                <TableColumn fx:id="status" prefWidth="179.99993896484375" text="Status" />
+            </columns>
+        </TableView>
+      <Label alignment="CENTER" layoutX="522.0" layoutY="64.0" prefHeight="74.0" prefWidth="416.0" text="Rafah Clinic" textAlignment="RIGHT" textFill="#4b4e30">
+         <effect>
+            <Glow level="0.45" />
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="100.0" fitWidth="109.0" layoutX="1000.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Desktop/medicine.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

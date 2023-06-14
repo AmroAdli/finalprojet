@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="764.0" prefWidth="1140.0" style="-fx-background-color: #F6C510;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PageUser">
+    <children>
+        <AnchorPane prefHeight="764.0" prefWidth="318.0" style="-fx-background-color: #FBE440;" styleClass="sidePar" stylesheets="@../../css/admin.css">
+            <children>
+                <Label alignment="CENTER" layoutX="77.0" layoutY="79.0" prefHeight="42.0" prefWidth="132.0" text="User name :" textFill="#398bf3">
+                    <font>
+                        <Font name="Constantia Bold Italic" size="18.0" />
+                    </font>
+                    <effect>
+                        <Glow level="0.33" />
+                    </effect>
+                </Label>
+                <Label fx:id="username" layoutX="133.0" layoutY="51.0" prefHeight="35.0" prefWidth="181.0" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            <Label alignment="BOTTOM_LEFT" layoutX="3.0" layoutY="140.0" prefHeight="42.0" prefWidth="312.0" text="Show  Free Appointments " textFill="#398bf3">
+               <font>
+                  <Font name="Constantia Bold Italic" size="18.0" />
+               </font>
+               <effect>
+                  <Glow level="0.33" />
+               </effect>
+            </Label>
+            <Label alignment="BOTTOM_LEFT" layoutX="7.0" layoutY="196.0" prefHeight="42.0" prefWidth="312.0" text="Book  Free Appointment" textFill="#398bf3">
+               <font>
+                  <Font name="Constantia Bold Italic" size="18.0" />
+               </font>
+               <effect>
+                  <Glow level="0.33" />
+               </effect>
+            </Label>
+            <Label alignment="BOTTOM_LEFT" layoutX="7.0" layoutY="254.0" prefHeight="42.0" prefWidth="312.0" text="Booked waiting Appointments" textFill="#398bf3">
+               <font>
+                  <Font name="Constantia Bold Italic" size="18.0" />
+               </font>
+               <effect>
+                  <Glow level="0.33" />
+               </effect>
+            </Label>
+            <Label alignment="BOTTOM_LEFT" layoutX="5.0" layoutY="309.0" prefHeight="42.0" prefWidth="312.0" text=" Booked Finished Appointments" textFill="#398bf3">
+               <font>
+                  <Font name="Constantia Bold Italic" size="18.0" />
+               </font>
+               <effect>
+                  <Glow level="0.33" />
+               </effect>
+            </Label>
+            <Label alignment="BOTTOM_LEFT" layoutX="7.0" layoutY="361.0" prefHeight="42.0" prefWidth="312.0" text="Doctor Comment" textFill="#398bf3">
+               <font>
+                  <Font name="Constantia Bold Italic" size="18.0" />
+               </font>
+               <effect>
+                  <Glow level="0.33" />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" layoutX="77.0" layoutY="446.0" prefHeight="42.0" prefWidth="132.0" text="Log Out" textFill="#398bf3">
+               <font>
+                  <Font name="Constantia Bold Italic" size="18.0" />
+               </font>
+               <effect>
+                  <Glow level="0.33" />
+               </effect>
+            </Label>
+            </children>
+            <effect>
+                <DropShadow blurType="ONE_PASS_BOX" color="#000000b2" height="28.29" radius="36.225" width="118.61" />
+            </effect>
+        </AnchorPane>
+        <TableView fx:id="tableView" layoutX="359.0" layoutY="198.0" prefHeight="528.0" prefWidth="741.0" style="-fx-background-color: #38B9E0; -fx-background-radius: 30;">
+            <columns>
+                <TableColumn fx:id="Appointment_Data" prefWidth="160.7999267578125" text="Appointment Data" />
+                <TableColumn fx:id="Appointment_Day" prefWidth="193.60003662109375" text="Appointment Day" />
+                <TableColumn fx:id="Appointment_Time" prefWidth="209.5999755859375" text="Appointment Time" />
+                <TableColumn fx:id="status" prefWidth="179.99993896484375" text="Status" />
+            </columns>
+        </TableView>
+      <Label alignment="CENTER" layoutX="522.0" layoutY="64.0" prefHeight="74.0" prefWidth="416.0" text="Rafah Clinic" textAlignment="RIGHT" textFill="#4b4e30">
+         <effect>
+            <Glow level="0.45" />
+         </effect>
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="100.0" fitWidth="109.0" layoutX="1000.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Desktop/medicine.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
